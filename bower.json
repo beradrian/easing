@@ -1,0 +1,17 @@
+{
+  "name": "easing",
+  "version": "0.0.1",
+  "description": "Easing functions for JavaScript",
+  "author": "Adrian Ber",
+  "license": "MIT",
+  "homepage": "https://github.com/beradrian/easing",
+  "main": "src/main/js/easing.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "docs",
+    "Gruntfile.js",
+    "index.html",
+    "package.json"
+  ],
+}

@@ -1,0 +1,30 @@
+{
+	"name": "easing"
+	, "version": "0.0.1"
+	, "description": "Easing functions for JavaScript"
+	, "author": {
+		"name": "Adrian Ber",
+		"email": "beradrian@yahoo.com"
+	}
+	, "license": "MIT"
+	, "repository" : { 
+		"type" : "git"
+		, "url" : "https://github.com/beradrian/easing.git"
+	}
+	, "main": "index.js"
+	, "dependencies": {
+	}
+	, "devDependencies" : {
+		"jasmine": "latest"
+		, "karma": "latest"
+		, "karma-chrome-launcher": "latest"
+		, "karma-firefox-launcher": "latest"
+		, "karma-phantomjs-launcher": "latest"
+		, "karma-commonjs": "latest"
+		, "karma-jasmine": "latest"
+	}
+	, "scripts": {
+		"test": "karma start src/test/karma.conf.js"
+		, "postinstall": "npm run test"
+	}
+}
