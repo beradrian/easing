@@ -9,9 +9,9 @@
 	, "license": "MIT"
 	, "repository" : { 
 		"type" : "git"
-		, "url" : "https://github.com/beradrian/easing.git"
+		, "url" : "https://github.com/beradrian/easingjs.git"
 	}
-	, "main": "index.js"
+	, "main": "src/main/js/easing.js"
 	, "dependencies": {
 	}
 	, "devDependencies" : {
@@ -25,6 +25,5 @@
 	}
 	, "scripts": {
 		"test": "karma start src/test/karma.conf.js"
-		, "postinstall": "npm run test"
 	}
 }
