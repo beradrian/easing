@@ -11,7 +11,7 @@ module.exports = function(config) {
 			"**/*Spec.js": ["commonjs"]
 			, "**/easing.js": ["commonjs"]
 		}
-		, browsers: ["Chrome", "Firefox", "PhantomJS"]
+		, browsers: ["Firefox", "PhantomJS"]
 		, singleRun: true
 	};
 	cfg.preprocessors["node_modules/" + deps + "/**/*.js"] =  ["commonjs"];
