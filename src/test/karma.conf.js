@@ -4,12 +4,12 @@ module.exports = function(config) {
 		basePath: '../..'
 		, logLevel: 'DEBUG'
 		, frameworks: ["jasmine", "commonjs"]
-		, files: ["src/test/spec/*Spec.js", {pattern: "src/main/js/easing.js", included: true}, 
+		, files: ["src/test/spec/*Spec.js", {pattern: "src/main/js/feasing.js", included: true}, 
 				{pattern: "node_modules/" + deps + "/*.js", included: true, watched: false}, 
 				{pattern: "node_modules/" + deps + "/**/*", included: false, watched: false}]
 		, preprocessors: {
 			"**/*Spec.js": ["commonjs"]
-			, "**/easing.js": ["commonjs"]
+			, "**/feasing.js": ["commonjs"]
 		}
 		, browsers: ["Firefox", "PhantomJS"]
 		, singleRun: true

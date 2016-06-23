@@ -1,4 +1,4 @@
-var Easing = require("../../main/js/easing.js");
+var Easing = require("../../main/js/feasing.js");
 
 describe("Easing", function() {
 	it("ease start and end", function() {
