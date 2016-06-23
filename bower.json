@@ -1,11 +1,11 @@
 {
-  "name": "easingjs",
+  "name": "feasing",
   "version": "0.0.1",
   "description": "Easing functions for JavaScript",
   "author": "Adrian Ber",
   "license": "MIT",
-  "homepage": "https://github.com/beradrian/easing",
-  "main": "src/main/js/easing.js",
+  "homepage": "https://github.com/beradrian/feasing",
+  "main": "src/main/js/feasing.js",
   "ignore": [
     "**/.*",
     "node_modules",
