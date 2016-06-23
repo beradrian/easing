@@ -8,14 +8,10 @@
 
 ## Installation
 Using 
-- *npm*: `npm install easingjs`. See below an example using `require`.
-- directly: download the archive from releases and include `easing.js`
+- *npm*: `npm install feasing`. See below an example using `require`.
+- directly: download the archive from releases and include `src/main/js/feasing.js`
 
 This can be used either from a browser or on the server side.
-
-## Usage
-
-	var easingjs = require("easingjs");
 
 ## API
 
@@ -32,6 +28,7 @@ Easing
 
 ## Example
 
+	var Easing = require("feasing");
 	// First create the easing function
 	var easing = new Easing(0, 100, 0, 1000, Easing.linear);
 	// get the value for the mid-time
@@ -42,7 +39,7 @@ The testing is done using Jasmine. To run the tests just run `npm test` or `jasm
 
 ## How to make a new release
 1. Change the version number in `bower.json` and `package.json` (if not already changed - check the version number against the latest release in Github)
-2. Create a new [release](https://github.com/beradrian/easingjs/releases) in github with the same name for tag and title as the version number (e.g. `1.0.0`). Do not forget to include the changelog in the release description.
+2. Create a new [release](https://github.com/beradrian/feasing/releases) in github with the same name for tag and title as the version number (e.g. `1.0.0`). Do not forget to include the changelog in the release description.
 3. Run `npm publish` to publish the new version to npm
 
 ## License
