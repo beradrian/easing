@@ -3,7 +3,7 @@
 
 [![NPM](https://nodei.co/npm/easingjs.png)](https://nodei.co/npm/easingjs/)
 
-# easingjs functions for JavaScript
+# Easing functions for JavaScript
 
 
 ## Installation
@@ -17,8 +17,25 @@ This can be used either from a browser or on the server side.
 
 	var easingjs = require("easingjs");
 
+## API
+
+Easing
+
+- constructor `new Easing(startValue, endValue, startTime, endTime, easingFunction)`
+ - `startValue` the value associated with `startTime`
+ - `endValue` the value associated with `endTime`
+ - `startTime` the value of the first moment in change. It could be seconds, milliseconds, whatever, but you must keep it consistent.
+ - `endTime` the value of the first moment in change.
+ - `easingFunction` must be one of Easing.linear, Easing.linearTween, Easing.easeInQuad, Easing.easeOutQuad, Easing.easeInOutQuad, Easing.easeInCubic, Easing.easeOutCubic, Easing.easeInOutCubic, Easing.easeInQuart, Easing.easeOutQuart, Easing.easeInOutQuart, Easing.easeInQuint, Easing.easeOutQuint, Easing.easeInOutQuint, Easing.easeInSine, Easing.easeOutSine, Easing.easeInOutSine, Easing.easeInExpo, Easing.easeOutExpo, Easing.easeInOutExpo, Easing.easeInCirc, Easing.easeOutCirc, Easing.easeInOutCirc
+- `.getValue(time)`
+ - returns the corresponding value for the given time. Time must be between `startTime` and `endTime`. 
 
 ## Example
+
+	// First create the easing function
+	var easing = new Easing(0, 100, 0, 1000, Easing.linear);
+	// get the value for the mid-time
+	var midValue = easing.getValue(500);
 
 ## Testing
 The testing is done using Jasmine. To run the tests just run `npm test` or `jasmine`.
